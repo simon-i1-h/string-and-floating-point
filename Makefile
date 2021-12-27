@@ -4,13 +4,13 @@ CC = clang
 CFLAGS = -Wall -Wextra -Og -g3 -std=c11 -pedantic -Wimplicit-fallthrough
 
 PROG = x
-SRCS = test.c string_to_double.c
+SRCS = test.c string_to_double.c double_to_string.c
 OBJS = $(SRCS:.c=.o)
 DEPS = $(OBJS:.o=.d)
 GCNO = $(SRCS:.c=.gcno)
 GCDA = $(SRCS:.c=.gcda)
 GCOV = $(SRCS:.c=.c.gcov)
-LDFLAGS = -fuse-ld=lld
+LDFLAGS = -fuse-ld=lld -lm
 
 all: $(PROG)
 
