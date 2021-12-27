@@ -5,7 +5,7 @@
  * return: -1 (error) or 0 (succeeded)
  */
 int
-strint_to_double(const char *src, double *dst)
+string_to_double(const char *src, double *dst)
 {
 	size_t len = strlen(src);
 	enum state {
