@@ -3,6 +3,10 @@
 
 #include <stddef.h>
 
+/*
+ * 文法(正規表現？): (0|[1-9][0-9]*)\.[0-9]+
+ * return: -1 (error) or 0 (succeeded)
+ */
 int string_to_double(const char *src, double *dst);
 
 /*
