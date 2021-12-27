@@ -11,21 +11,21 @@ main(void)
 
 	str = "0.5";
 	strint_to_double(str, &receive);
-	printf("str: %s, double: %lf\n", str, receive);
+	printf("str: %s, double: %f\n", str, receive);
 
 	str = "1.0";
 	strint_to_double(str, &receive);
-	printf("str: %s, double: %lf\n", str, receive);
+	printf("str: %s, double: %f\n", str, receive);
 
 	str = "12.625";
 	strint_to_double(str, &receive);
-	printf("str: %s, double: %lf\n", str, receive);
+	printf("str: %s, double: %f\n", str, receive);
 
 	/* キリが悪い */
 
 	str = "0.1";
 	strint_to_double(str, &receive);
-	printf("str: %s, double: %lf\n", str, receive);
+	printf("str: %s, double: %f\n", str, receive);
 
 	return 0;
 }
